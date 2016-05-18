@@ -8,7 +8,6 @@ Gem::Specification.new do |spec|
   spec.version       = Agroclimatology::VERSION
   spec.authors       = ["Bryce Johnston"]
   spec.email         = ["johnstonbrc@gmail.com"]
-
   spec.summary       = %q{Ruby client for interacting with the NASA (POWER) Agroclimatology Web Resource}
   spec.description   = %q{Ruby client for interacting with the NASA (POWER) Agroclimatology Web Resource}
   spec.homepage      = "https://github.com/brycejohnston/agroclimatology"
@@ -27,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "faraday", "~> 0.9.2"
+  spec.add_dependency "oj", "~> 2.15"
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
