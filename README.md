@@ -1,4 +1,6 @@
-# Agroclimatology [![Build Status](https://travis-ci.org/brycejohnston/agroclimatology.svg?branch=master)](https://travis-ci.org/brycejohnston/agroclimatology)
+# Agroclimatology
+[![Gem Version](https://badge.fury.io/rb/agroclimatology.svg)](https://badge.fury.io/rb/agroclimatology)
+[![Build Status](https://travis-ci.org/brycejohnston/agroclimatology.svg?branch=master)](https://travis-ci.org/brycejohnston/agroclimatology)
 
 Ruby client for interacting with the [NASA (POWER) Agroclimatology Web Resource](http://power.larc.nasa.gov/cgi-bin/agro.cgi)
 
@@ -47,9 +49,9 @@ Fetch solar radiation data for Woombye, QLD, Australia from 2015 - 2016
 Agroclimatology.fetch(-26.660446, 152.964647, 2015, 2016)
 ```
 
-### Returns:
+### Output
 
-Result set containing records for every day included in year_start - year_end range
+Returns result set containing records for every day included in year_start - year_end range as JSON
 - year                - Year
 - day                 - Day of Year
 - insolation_surface  - Average Insolation Incident On A Horizontal Surface (MJ/m^2/day)  

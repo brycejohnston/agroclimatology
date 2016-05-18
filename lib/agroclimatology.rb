@@ -1,6 +1,7 @@
 require "agroclimatology/version"
-require "faraday"
 require "csv"
+require "faraday"
+require "oj"
 
 module Agroclimatology
 
@@ -13,10 +14,18 @@ module Agroclimatology
 
     response = Faraday.get url
     if response.status == 200
-      tsv_data = response.body.split("-END HEADER-").last
-      CSV.parse(tsv_data, { :col_sep => "\t" }) do |row|
-        puts row
+      page_data = response.body.split("-END HEADER-").last
+      data = []
+      page_data.split("\n").each do |line|
+        row = line.split(" ")
+        daily_record = {
+          "year": row[0],
+          "day_of_year": row[1],
+          "insolation_surface": row[2]
+        }
+        data << daily_record
       end
+      json = Oj.dump(data)
     else
       puts "Error: #{response.status}"
     end
