@@ -23,7 +23,15 @@ Or install it yourself as:
 
 ## Usage
 
-Coming soon...
+Get all historical data available
+```ruby
+Agroclimatology.fetch(39.1836111, -96.5713889)
+```
+
+Specify a date range
+```ruby
+Agroclimatology.fetch(39.1836111, -96.5713889, 2010, 2016)
+```
 
 ## Development
 
