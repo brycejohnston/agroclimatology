@@ -4,7 +4,7 @@
 
 Ruby client for interacting with the [NASA (POWER) Agroclimatology Web Resource](http://power.larc.nasa.gov/cgi-bin/agro.cgi)
 
-Initial functionality is focused on getting solar radiation datasets (insolation on horizontal surface)
+Initial functionality is focused on getting solar radiation data
 for a given latitude and longitude. Other solar radiation and meteorological query parameters will be available in subsequent versions.
 
 ## Installation
@@ -51,10 +51,12 @@ Agroclimatology.fetch(-26.660446, 152.964647, 2015, 2016)
 
 ### Output
 
-Returns result set containing records for every day included in year_start - year_end range as JSON
-- year                - Year
-- day                 - Day of Year
-- insolation_surface  - Average Insolation Incident On A Horizontal Surface (MJ/m^2/day)  
+Returns JSON output containing records for every day included in year_start - year_end range
+- **year**                - Year
+- **day**                 - Day of Year
+- **rad_atmosphere** - Average Top-of-atmosphere Insolation (MJ/m^2/day)
+- **rad_surface** - Average Insolation Incident On A Horizontal Surface (MJ/m^2/day)  
+- **rad_flux** - Average Downward Longwave Radiative Flux (MJ/m^2/day)  
 
 ## Development
 
@@ -62,7 +64,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/bjohnston/agroclimatology.
+Bug reports and pull requests are welcome on GitHub at https://github.com/brycejohnston/agroclimatology.
 
 ## License
 

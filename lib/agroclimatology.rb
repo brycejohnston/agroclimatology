@@ -1,6 +1,6 @@
 require "agroclimatology/version"
 require "csv"
-require "faraday"
+require "httparty"
 require "oj"
 
 module Agroclimatology
@@ -10,10 +10,10 @@ module Agroclimatology
     url << "&lat=#{lat.to_s}&lon=#{lon.to_s}"
     url << "&ms=1&ds=1&ys=#{year_start.to_s}"
     url << "&me=12&de=31&ye=#{year_end.to_s}"
-    url << "&p=swv_dwn&submit=Submit"
+    url << "&p=toa_dwn&p=swv_dwn&p=lwv_dwn&submit=Submit"
 
-    response = Faraday.get url
-    if response.status == 200
+    response = HTTParty.get(url)
+    if response.code == 200
       page_data = response.body.split("-END HEADER-").last
       data = []
       page_data.split("\n").each do |line|
@@ -22,7 +22,9 @@ module Agroclimatology
           daily_record = {
             "year": row[0],
             "day_of_year": row[1],
-            "insolation_surface": row[2]
+            "rad_atmosphere": row[2],
+            "rad_surface": row[3],
+            "rad_flux": row[4]
           }
           data << daily_record
         end
