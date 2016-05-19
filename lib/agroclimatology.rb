@@ -18,14 +18,17 @@ module Agroclimatology
       data = []
       page_data.split("\n").each do |line|
         row = line.split(" ")
-        daily_record = {
-          "year": row[0],
-          "day_of_year": row[1],
-          "insolation_surface": row[2]
-        }
-        data << daily_record
+        unless row[0].to_s.empty?
+          daily_record = {
+            "year": row[0],
+            "day_of_year": row[1],
+            "insolation_surface": row[2]
+          }
+          data << daily_record
+        end
       end
       json = Oj.dump(data)
+      puts json
     else
       puts "Error: #{response.status}"
     end
