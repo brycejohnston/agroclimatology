@@ -44,9 +44,9 @@ Fetch all solar radiation data available for Manhattan, KS, United States (1983 
 Agroclimatology.fetch(39.1836111, -96.5713889)
 ```
 
-Fetch solar radiation data for Woombye, QLD, Australia from 2016 - 2016
+Fetch solar radiation data for Woombye, QLD, Australia from 2015 - 2016
 ```ruby
-Agroclimatology.fetch(-26.660446, 152.964647, 2016, 2016)
+Agroclimatology.fetch(-26.660446, 152.964647, 2015, 2016)
 ```
 
 ```json
