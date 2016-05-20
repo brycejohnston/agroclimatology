@@ -1,5 +1,4 @@
 require "agroclimatology/version"
-require "csv"
 require "httparty"
 require "oj"
 

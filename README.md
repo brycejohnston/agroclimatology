@@ -44,16 +44,38 @@ Fetch all solar radiation data available for Manhattan, KS, United States (1983 
 Agroclimatology.fetch(39.1836111, -96.5713889)
 ```
 
-Fetch solar radiation data for Woombye, QLD, Australia from 2015 - 2016
+Fetch solar radiation data for Woombye, QLD, Australia from 2016 - 2016
 ```ruby
-Agroclimatology.fetch(-26.660446, 152.964647, 2015, 2016)
+Agroclimatology.fetch(-26.660446, 152.964647, 2016, 2016)
+```
+
+```json
+[
+  {
+    ":year":"2015",
+    ":day_of_year":"1",
+    ":rad_atmosphere":"42.84",
+    ":rad_surface":"27.47",
+    ":rad_flux":"34.78"
+  },
+  {
+    ":year":"2015",
+    ":day_of_year":"2",
+    ":rad_atmosphere":"43.27",
+    ":rad_surface":"23.00",
+    ":rad_flux":"34.81"
+  },
+  {
+    etc...
+  },
+]
 ```
 
 ### Output
 
 Returns JSON output containing records for every day included in year_start - year_end range
 - **year**                - Year
-- **day**                 - Day of Year
+- **day_of_year**         - Day of Year
 - **rad_atmosphere** - Average Top-of-atmosphere Insolation (MJ/m^2/day)
 - **rad_surface** - Average Insolation Incident On A Horizontal Surface (MJ/m^2/day)  
 - **rad_flux** - Average Downward Longwave Radiative Flux (MJ/m^2/day)  
