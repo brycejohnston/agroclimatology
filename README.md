@@ -1,6 +1,6 @@
 # Agroclimatology
 [![Gem Version](https://badge.fury.io/rb/agroclimatology.svg)](https://badge.fury.io/rb/agroclimatology)
-[![Build Status](https://travis-ci.org/brycejohnston/agroclimatology.svg?branch=master)](https://travis-ci.org/brycejohnston/agroclimatology)
+[![Build Status](https://travis-ci.org/agruby/agroclimatology.svg?branch=master)](https://travis-ci.org/agruby/agroclimatology)
 
 Ruby client for interacting with the [NASA (POWER) Agroclimatology Web Resource](http://power.larc.nasa.gov/cgi-bin/agro.cgi)
 
