@@ -90,8 +90,8 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/agruby/agroclimatology.
+Bug reports and pull requests are welcome on GitHub at https://github.com/AgRuby/agroclimatology.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [BSD 3-Clause License](http://opensource.org/licenses/BSD-3-Clause) (see LICENSE.txt).
