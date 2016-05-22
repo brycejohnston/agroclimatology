@@ -1,6 +1,10 @@
 # Agroclimatology
-[![Gem Version](https://badge.fury.io/rb/agroclimatology.svg)](https://badge.fury.io/rb/agroclimatology)
-[![Build Status](https://travis-ci.org/agruby/agroclimatology.svg?branch=master)](https://travis-ci.org/agruby/agroclimatology)
+
+[![Gem Version](http://img.shields.io/gem/v/agroclimatology.svg)][gem]
+[![Build Status](http://img.shields.io/travis/AgRuby/agroclimatology.svg)][travis]
+
+[gem]: https://rubygems.org/gems/agroclimatology
+[travis]: http://travis-ci.org/AgRuby/agroclimatology
 
 Ruby client for interacting with the [NASA (POWER) Agroclimatology Web Resource](http://power.larc.nasa.gov/cgi-bin/agro.cgi)
 
