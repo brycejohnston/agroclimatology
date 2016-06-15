@@ -98,8 +98,6 @@ Data provided by [NASA (POWER) Agroclimatology Web Resource](http://power.larc.n
 
 Agroclimatology gem created and maintained by [Bryce Johnston](https://github.com/brycejohnston)
 
-Development supported by [Crop Quest, Inc.](http://www.cropquest.com)
-
 ## License
 
 The gem is available as open source under the terms of the BSD 3-Clause License (see [LICENSE.txt](https://github.com/AgRuby/agroclimatology/blob/master/LICENSE.txt))
