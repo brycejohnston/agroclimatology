@@ -68,11 +68,10 @@ Agroclimatology.fetch(-26.660446, 152.964647, 2015, 2016)
     :day_of_year => "2",
     :rad_atmosphere => "43.27",
     :rad_surface => "23.00",
-    :rad_flux => 34.81"
+    :rad_flux => "34.81"
   },
 ]
 ```
-=> {:year=>"2015", :day_of_year=>"1", :rad_atmosphere=>"42.84", :rad_surface=>"27.47", :rad_flux=>"34.78"}
 
 ### Output
 
