@@ -28,8 +28,7 @@ module Agroclimatology
           data << daily_record
         end
       end
-      json = Oj.dump(data)
-      puts json
+      return data
     else
       puts "Error: #{response.status}"
     end
