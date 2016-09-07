@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "agroclimatology"
   spec.version       = Agroclimatology::VERSION
   spec.authors       = ["Bryce Johnston"]
-  spec.email         = ["johnstonbrc@gmail.com"]
+  spec.email         = ["bjohnston@cropquest.com"]
   spec.summary       = %q{Ruby client for interacting with the NASA (POWER) Agroclimatology Web Resource}
   spec.description   = %q{Ruby client for interacting with the NASA (POWER) Agroclimatology Web Resource}
   spec.homepage      = "https://github.com/brycejohnston/agroclimatology"
