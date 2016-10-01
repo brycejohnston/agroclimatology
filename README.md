@@ -1,10 +1,10 @@
 # Agroclimatology
 
 [![Gem Version](http://img.shields.io/gem/v/agroclimatology.svg)][gem]
-[![Build Status](http://img.shields.io/travis/CropQuest/agroclimatology.svg)][travis]
+[![Build Status](http://img.shields.io/travis/brycejohnston/agroclimatology.svg)][travis]
 
 [gem]: https://rubygems.org/gems/agroclimatology
-[travis]: http://travis-ci.org/CropQuest/agroclimatology
+[travis]: http://travis-ci.org/brycejohnston/agroclimatology
 
 Ruby client for interacting with the [NASA (POWER) Agroclimatology Web Resource](http://power.larc.nasa.gov/cgi-bin/agro.cgi)
 
@@ -88,7 +88,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/CropQuest/agroclimatology.
+Bug reports and pull requests are welcome on GitHub at https://github.com/brycejohnston/agroclimatology.
 
 ## Acknowledgments
 
@@ -96,4 +96,4 @@ Data provided by [NASA (POWER) Agroclimatology Web Resource](http://power.larc.n
 
 ## License
 
-The gem is available as open source under the terms of the BSD 3-Clause License (see [LICENSE.txt](https://github.com/CropQuest/agroclimatology/blob/master/LICENSE.txt))
+The gem is available as open source under the terms of the MIT License (see [LICENSE.txt](https://github.com/brycejohnston/agroclimatology/blob/master/LICENSE.txt))
