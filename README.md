@@ -1,10 +1,10 @@
 # Agroclimatology
 
 [![Gem Version](http://img.shields.io/gem/v/agroclimatology.svg)][gem]
-[![Build Status](http://img.shields.io/travis/brycejohnston/agroclimatology.svg)][travis]
+[![Build Status](http://img.shields.io/travis/beaorn/agroclimatology.svg)][travis]
 
 [gem]: https://rubygems.org/gems/agroclimatology
-[travis]: http://travis-ci.org/brycejohnston/agroclimatology
+[travis]: http://travis-ci.org/beaorn/agroclimatology
 
 Ruby client for interacting with the [NASA (POWER) Agroclimatology Web Resource](http://power.larc.nasa.gov/cgi-bin/agro.cgi)
 
@@ -44,12 +44,12 @@ Agroclimatology.fetch(latitude, longitude, year_start, year_end)
 
 ### Examples
 
-Fetch all solar radiation data available for Dodge City, KS, United States
+Fetch all solar radiation data
 ```ruby
 Agroclimatology.fetch(37.752798, -100.017079)
 ```
 
-Fetch solar radiation data for Woombye, QLD, Australia from 2015 - 2016
+Fetch solar radiation data from 2015 - 2016
 ```ruby
 Agroclimatology.fetch(-26.660446, 152.964647, 2015, 2016)
 ```
@@ -88,7 +88,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/brycejohnston/agroclimatology.
+Bug reports and pull requests are welcome on GitHub at https://github.com/beaorn/agroclimatology.
 
 ## Acknowledgments
 
@@ -96,4 +96,4 @@ Data provided by [NASA (POWER) Agroclimatology Web Resource](http://power.larc.n
 
 ## License
 
-The gem is available as open source under the terms of the MIT License (see [LICENSE.txt](https://github.com/brycejohnston/agroclimatology/blob/master/LICENSE.txt))
+The gem is available as open source under the terms of the MIT License (see [LICENSE.txt](https://github.com/beaorn/agroclimatology/blob/master/LICENSE.txt))
